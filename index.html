@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonsy Logistics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#101F2B] text-white">
+    <section id="top-social_links"
+        class="bg-[#080d12] text-[#F4AA41] h-[52px] md:px-20 lg:px-10 xl:px-20 px-4 flex gap-3 items-center justify-end">
+        <a href="" target="_blank"><i class="fa-brands fa-x-twitter  text-[25px]"></i></a>
+        <a href="" target="_blank"><i class="fa-brands fa-instagram text-[25px]"></i></a>
+        <a href="" target="_blank"><i class="fa-brands fa-telegram text-[25px]"></i></a>
+        <a href="" target="_blank"><i class="fa-brands fa-facebook  text-[25px]"></i></a>
+    </section>
+    <header
+        class="sticky top-0 z-[10] bg-[#101F2B] flex justify-between items-center md:px-10 lg:px-10 xl:px-20 px-4 h-[80px]">
+        <div class="flex gap-2 items-center relative">
+            <img src="./images/logo.png" alt="">
+            <h1>NONSY LOGISTICS</h1>
+            <span class="absolute left-[16%] top-1 rotate-[-20deg] text-2xl">N</span>
+        </div>
+        <nav class="hidden lg:flex xl:gap-32 lg:gap-16 justify-between items-center">
+            <div class="flex xl:gap-10 lg:gap-6">
+                <a href="">Home</a>
+                <a href="">About Us</a>
+                <a href="">Services</a>
+                <a href="">Jobs</a>
+                <a href="">News</a>
+                <a href="">Contacts</a>
+            </div>
+            <div>
+                <a href="" class="inline-block px-4 py-2 bg-[#080d12] rounded ">Sign Up</a>
+                <a href="" class="inline-block px-4 py-2 bg-[#FB842C] rounded text-black">Sign In</a>
+            </div>
+        </nav>
+
+        <!-- This is the Hamburger -->
+        <span id="hamburgerBtn" class="lg:hidden"><i class="fa-solid fa-bars fa-2x"></i></span>
+
+        <!-- this is the mobile nav -->
+        <nav id="hamburgerMenu" class="fixed bg-[#101F2B] w-[80%] right-0 top-0 py-10 h-full">
+            <div class="">
+                <a href="" class="block px-4 py-4">Home</a>
+                <a href="" class="block px-4 py-4">About Us</a>
+                <a href="" class="block px-4 py-4">Services</a>
+                <a href="" class="block px-4 py-4">Jobs</a>
+                <a href="" class="block px-4 py-4">News</a>
+                <a href="" class="block px-4 py-4">Contacts</a>
+            </div>
+            <div class="flex flex-col items-start">
+                <a href="" class="inline-block px-4 py-2 bg-[#080d12] w-full">Sign Up</a>
+                <a href="" class="inline-block px-4 py-2 bg-[#F4AA41] w-full text-black">Sign In</a>
+            </div>
+            <i id="mobMenuClose" class="fa-solid fa-close fa-2x absolute top-2 right-2"></i>
+        </nav>
+    </header>
+    <main>
+        <section id="hero-section"
+            class="bg-[url('./images/hero-image-small.png')] relative lg:bg-[url('./images/hero-image-big.png')] bg-cover h-[100vh]">
+            <div class="absolute lg:left-[40%] lg:top-[20%] bottom-10 left-10">
+                <h1 class="xl:text-8xl lg:text-7xl text-4xl text-black font-bold">MOVING YOUR<br> WORLD</h1>
+                <span class="flex gap-2">
+                    <p class="xl:text-4xl lg:text-3xl text-black font-bold">ONE PACKAGE<br> AT A TIME!</p>
+                    <img src="/images/package-box.png" alt="" class="w-[60px] h-[50px] lg:w-[90px] h-[auto]">
+                </span>
+            </div>
+        </section>
+        <section class="py-10">
+            <h1 class="text-center text-2xl lg:text-4xl mb-6">Why traders choose us</h1>
+            <div class="flex flex-wrap gap-2 justify-center">
+                <div class="flex rounded bg-[#FC852C] w-[313px] text-black py-6 px-4 gap-2">
+                    <img src="./images/fork-lift-trader.png" alt="" class="w-[38px] h-[38px]">
+                    <div>
+                        <h2 class="text-xl font-bold">Express Parcel Delivery</h2>
+                        <p class="text-lg mb-8 mt-2">We deliver your parcels quickly and efficiently.</p>
+                        <a href="" class="text-lg font-bold">Read More</a>
+                    </div>
+                </div>
+                <div class="flex rounded bg-[#FC852C] w-[313px] lg:mx-[30px] text-black py-6 px-4 gap-2">
+                    <img src="./images/box-to-box.png" alt="" class="w-[48px] h-[48px]">
+                    <div>
+                        <h2 class="text-xl font-bold">Customised Logistics Solution</h2>
+                        <p class="text-lg mb-8 mt-2">Tailored logistics services to meet your unique needs.</p>
+                        <a href="" class="text-lg font-bold">Read More</a>
+                    </div>
+                </div>
+                <div class="flex rounded bg-[#FC852C] w-[313px] text-black py-6 px-4 gap-2">
+                    <img src="./images/fa-solid_warehouse.png" alt="" class="w-[38px] h-[38px]">
+                    <div>
+                        <h2 class="text-xl font-bold">Secure Warehouse Services</h2>
+                        <p class="text-lg mb-8 mt-2">Safe and reliable storage solution for your goods.</p>
+                        <a href="" class="text-lg font-bold">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+            class="bg-[#FB842C] text-black flex lg:flex-nowrap flex-wrap items-center gap-10 md:px-20 lg:px-10 xl:px-20 px-4 pb-10">
+            <div class="relative lg:w-[60%]">
+                <img src="./images/containers.png" alt="" class="lg:w-[602px]">
+                <span
+                    class="bg-white w-[197px] xl:w-[327px] lg:w-[250px] inline-block p-4 shadow-md shadow-black absolute bottom-[-20px] right-0"><img
+                        src="./images/man-carrying-package-and-smiling.png" alt="" class="lg:w-[297px]"> </span>
+            </div>
+            <div class="text-center lg:text-left lg:w-[40%]">
+                <h1 class="text-4xl ">About Us</h1>
+                <h2 class="font-bold">Above all, we believe in delivering TRUST not just parcels.</h2>
+                <p>We are a dedicated logistics company, committed
+                    to providing SWIFT, SECURE and SEAMLESS
+                    delivery services. Our solutions include express
+                    parcel delivery, customized logistics, secure
+                    warehousing and live tracking of goods.
+                    We believe in connecting places and delivering
+                    excellence, making us your TRUSTED partner in all
+                    your delivery needs.</p>
+            </div>
+        </section>
+        <section class="lg:px-10 xl:px-20 pt-10">
+            <h1 class="text-center text-2xl lg:text-4xl mb-6">Our Pillars</h1>
+            <div class="lg:flex justify-center">
+                <div class="lg:w-[886px] relative">
+                    <img src="./images/our-pillars-img1.png" alt="" class="hidden lg:block w-full h-[100%]">
+                    <img src="./images/our-pillars-img1-small.png" alt="" class="lg:hidden w-full">
+                    <div class="absolute bottom-10 left-10">
+                        <h1 class="text-black font-bold text-3xl">01</h1>
+                        <p class="text-2xl mb-20 font-bold">SPEED</p>
+                        <span
+                            class="border-4 rounded-full w-[45px] h-[45px] bg-[#101F2B] outline outline-[#101F2B] text-2xl grid place-items-center"><i
+                                class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="lg:w-[886px] relative">
+                    <img src="./images/our-pillars-img2.png" alt="" class="hidden lg:block w-full h-[100%]">
+                    <img src="./images/our-pillars-img2-small.png" alt="" class="lg:hidden w-full">
+                    <div class="absolute bottom-10 left-10">
+                        <h1 class="text-black font-bold text-3xl">02</h1>
+                        <p class="text-2xl mb-20 font-bold">SERVICE</p>
+                        <span
+                            class="border-4 rounded-full w-[45px] h-[45px] bg-[#101F2B] outline outline-[#101F2B] text-2xl grid place-items-center"><i
+                                class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="lg:w-[886px] relative">
+                    <img src="./images/our-pillars-img3.png" alt="" class="hidden lg:block w-full h-[100%]">
+                    <img src="./images/our-pillars-img3-small.png" alt="" class="lg:hidden w-full">
+                    <div class="absolute bottom-10 left-10">
+                        <h1 class="text-black font-bold text-3xl">03</h1>
+                        <p class="text-2xl mb-20 font-bold">SAFETY</p>
+                        <span
+                            class="border-4 rounded-full w-[45px] h-[45px] bg-[#101F2B] outline outline-[#101F2B] text-2xl grid place-items-center"><i
+                                class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+                <div class="lg:w-[886px] relative">
+                    <img src="./images/our-pillars-img4.png" alt="" class="hidden lg:block w-full h-[100%]">
+                    <img src="./images/our-pillars-img4-small.png" alt="" class="lg:hidden w-full">
+                    <div class="absolute bottom-10 left-10">
+                        <h1 class="text-black font-bold text-3xl">04</h1>
+                        <p class="text-2xl mb-20 font-bold">SAVINGS</p>
+                        <span
+                            class="border-4 rounded-full w-[45px] h-[45px] bg-[#101F2B] outline outline-[#101F2B] text-2xl grid place-items-center"><i
+                                class="fa-solid fa-arrow-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lg:px-10 xl:px-20 py-10">
+            <h1 class="text-center text-2xl lg:text-4xl mb-6 lg:mb-10">Your cargo is safe with us</h1>
+            <div class="lg:grid lg:grid-cols-4 flex flex-wrap gap-4 justify-center place-items-center">
+                <span class="flex flex-col items-center w-[160px]">
+                    <img src="./images/fa-regular_handshake.png" alt="">
+                    <p class="text-xl">Integrity</p>
+                </span>
+                <span class="flex flex-col items-center w-[160px]">
+                    <img src="./images/bullseye.png" alt="">
+                    <p class="text-xl">Long-sightedness</p>
+                </span>
+                <span class="flex flex-col items-center w-[160px]">
+                    <img src="./images/group-staff.png" alt="">
+                    <p class="text-xl">Challenging staff</p>
+                </span>
+                <span class="flex flex-col items-center w-[160px]">
+                    <img src="./images/secure.png" alt="">
+                    <p class="text-xl">Privacy and safety</p>
+                </span>
+                <span class="flex flex-col items-center w-[160px]">
+                    <img src="./images/quality-badge.png" alt="">
+                    <p class="text-xl"> Quality services</p>
+                </span>
+                <span class="flex flex-col items-center w-[160px]">
+                    <img src="./images/bulb-on.png" alt="">
+                    <p class="text-xl">Continuous</p>
+                </span>
+                <span class="flex flex-col items-center w-[160px]">
+                    <img src="./images/chess-knight.png" alt="">
+                    <p class="text-xl text-center">Innovation<br> solutions</p>
+                </span>
+                <span class="flex flex-col items-center w-[160px]">
+                    <img src="./images/gem.png" alt="">
+                    <p class="text-xl text-center">Operational<br> excellence</p>
+                </span>
+            </div>
+
+        </section>
+        <section id="testimonials"
+            class="lg:flex relative justify-between lg:py-20 py-10 lg:px-10 xl:px-20 px-4 bg-[url('./images/delivery-man-delivering-package.png')] bg-[1000px] lg:bg-center w-full h-[600px] bg-cover">
+            <div>
+                <h1 class="lg:text-7xl text-4xl text-black font-bold">What they say <br>about us</h1>
+                <p class="text-xl">Testimonials</p>
+            </div>
+            <div class="flex items-center mt-10">
+                <div class="bg-[#101F2B] relative h-[215px] w-[325px] rounded-xl p-6">
+                    <div id="loader" class="custom-loader absolute top-[33%] left-[43%]"></div>
+                    <p id="randomComment" class="text-xl"></p>
+                    <h1 id="randUsername" class="text-4xl text-[#FB842C] mt-4"></h1>
+                </div>
+            </div>
+        </section>
+        <section class="lg:px-10 xl:px-20 py-10">
+            <h1 class="text-center text-2xl lg:text-4xl mb-6 lg:mb-10">Request a call back</h1>
+            <form action="" id="callBackForm" method="get" class="flex flex-col lg:flex-row items-center justify-center gap-10">
+                <input type="text" id="firstnameInput" value="" name="firstname" required placeholder="First name"
+                    class="outline-0 pl-4 h-[48px] md:w-[350px] w-[300px] text-black">
+                <input type="tel" id="phoneInput" value="" name="phonenumber" required placeholder="Phone number"
+                    class="outline-0 pl-4 h-[48px] md:w-[350px] w-[300px] text-black">
+                <button type="submit" id="submitBtn" class="bg-[#FB842C] w-[100px] h-[48px] py-2">Submit</button>
+            </form>
+        </section>
+        <section>
+            <img src="./images/target-bg-small.png" alt="" class="w-full lg:hidden">
+            <img src="./images/target-bg.png" alt="" class="hidden lg:block w-full">
+
+        </section>
+    </main>
+    <footer class="flex flex-col lg:flex-row gap-10 md:px-10 lg:px-10 xl:px-20 px-4 lg:h-[400px] py-10">
+        <div class="lg:w-[50%]">
+            <div class="w-[300px]">
+                <div class="flex gap-2 items-center relative">
+                    <img src="./images/logo.png" alt="">
+                    <h1>NONSY LOGISTICS</h1>
+                    <span class="absolute left-[10%] top-1 rotate-[-20deg] text-2xl">N</span>
+                </div>
+            </div>
+
+            <p class="lg:w-[70%] mt-6">For more than 30 years, Transport has been
+                a reliable partner in the field of logistics
+                and cargo forwarding.
+
+                We work 7 days a week, every day including
+                major holidays. Contact us for any info.
+            </p>
+            <p class="mt-6">Built and designed with love by Abbey &copy copyright 2023</p>
+        </div>
+        <div class="lg:w-[25%]">
+            <h2 class="text-xl font-bold mb-2">Get in touch</h2>
+            <ul>
+                <li class="flex gap-5 items-center"><i class="fa-solid fa-location-dot"></i>
+                    <p>2 PVOD New GRA. Enugu, Enugu State.</p>
+                </li>
+                <li class="flex gap-5 items-center my-2"><i class="fa-solid fa-phone"></i>
+                    <p>(+234) 813 0893 579 <br> (+234) 808 8423 637</p>
+                </li>
+                <li class="flex gap-5 items-center"><i class="fa-solid fa-envelope"></i><a
+                        href="mailto:nonsochiemelu@gmail.com">nonsochiemelu@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="lg:w-[25%]">
+            <div class="mb-6">
+                <h2 class="text-xl font-bold mb-2">Social network</h2>
+                <a href="" target="_blank" class="pr-4"><i class="fa-brands fa-x-twitter  text-[25px]"></i></a>
+                <a href="" target="_blank" class="pr-4"><i class="fa-brands fa-instagram text-[25px]"></i></a>
+                <a href="" target="_blank" class="pr-4"><i class="fa-brands fa-telegram text-[25px]"></i></a>
+                <a href="" target="_blank"><i class="fa-brands fa-facebook  text-[25px]"></i></a>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold mb-2">Sign up for email alerts</h2>
+                <form action="" method="get" class="h-[48px] w-[282px] relative">
+                    <input type="text" name="emailAlert" placeholder="Enter your email"
+                        class="h-[48px] w-[282px] rounded bg-[#354B5EB2] pl-4">
+                        <i class="fa-solid fa-paper-plane fa-2x text-[#FB842C] absolute right-2 top-2"></i>
+                </form>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
